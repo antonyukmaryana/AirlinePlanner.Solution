@@ -9,7 +9,7 @@ namespace AirlinePlanner
     private string _name;
     private int _id;
 
-    public City(string name, int id = o)
+    public City(string name, int id = 0)
     {
       _id = id;
       _name = name;
@@ -28,7 +28,7 @@ namespace AirlinePlanner
     }
     public void SetName(string newName)
     {
-      _name = newName
+      _name = newName;
     }
 
     public static List<City> GetAll()
@@ -37,7 +37,7 @@ namespace AirlinePlanner
       MySqlConnection conn = DB.Connection();
       conn.Open();
       MySqlCommand cmd = conn.CreateCommand() as MySqlCommand;
-      cmd.CoomandText = @"SELECT * FROM City;";
+      cmd.CommandText = @"SELECT * FROM City;";
       MySqlDataReader rdr = cmd.ExecuteReader() as MySqlDataReader;
 
 
@@ -47,7 +47,7 @@ namespace AirlinePlanner
         string cityName = rdr.GetString(1);
 
         City city = new City(cityName, cityId);
-        allStylists.Add(city);
+        allCities.Add(city);
       }
 
       conn.Close();

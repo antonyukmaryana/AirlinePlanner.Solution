@@ -1,5 +1,5 @@
 using System;
-using MySqlData.MySqlClient;
+using MySql.Data.MySqlClient;
 using AirlinePlanner;
 
 namespace AirlinePlanner

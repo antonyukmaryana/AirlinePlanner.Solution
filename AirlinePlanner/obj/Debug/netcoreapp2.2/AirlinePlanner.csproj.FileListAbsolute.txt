@@ -1,0 +1,6 @@
+/Users/maryanaantonyuk/projects/AirlinePlanner_Solution/AirlinePlanner/obj/Debug/netcoreapp2.2/AirlinePlanner.csprojAssemblyReference.cache
+/Users/maryanaantonyuk/projects/AirlinePlanner_Solution/AirlinePlanner/obj/Debug/netcoreapp2.2/AirlinePlanner.csproj.CoreCompileInputs.cache
+/Users/maryanaantonyuk/projects/AirlinePlanner_Solution/AirlinePlanner/obj/Debug/netcoreapp2.2/AirlinePlanner.RazorAssemblyInfo.cache
+/Users/maryanaantonyuk/projects/AirlinePlanner_Solution/AirlinePlanner/obj/Debug/netcoreapp2.2/AirlinePlanner.RazorAssemblyInfo.cs
+/Users/maryanaantonyuk/projects/AirlinePlanner_Solution/AirlinePlanner/obj/Debug/netcoreapp2.2/AirlinePlanner.AssemblyInfoInputs.cache
+/Users/maryanaantonyuk/projects/AirlinePlanner_Solution/AirlinePlanner/obj/Debug/netcoreapp2.2/AirlinePlanner.AssemblyInfo.cs

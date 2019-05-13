@@ -6,7 +6,7 @@ namespace AirlinePlanner.Models
 {
   public class Flight
   {
-    private in _id;
+    private int _id;
     private string _name;
     private int _cityId;
 

@@ -1,0 +1,9 @@
+@using AirlinePlanner.Models;
+<h1> We are happy to welcome you at our Airline Planner</h1>
+<h2>Please enter your flight information</h2>
+<form action='/flights/new?cityId=@Context.Request.Query["cityId"]' method='post'>
+<label for = 'name'>Enter flight info:</label>
+<input id='name' name='name' type='text'>
+<button type='submit'>Add flight</button>
+</form>
+<p>< href='/'> Return to Main Page</a></p>
