@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System;
 using MySql.Data.MySqlClient;
 
-namespace AirlinePlanner
+namespace AirlinePlanner.Models
 {
   public class City
   {
@@ -37,7 +37,7 @@ namespace AirlinePlanner
       MySqlConnection conn = DB.Connection();
       conn.Open();
       MySqlCommand cmd = conn.CreateCommand() as MySqlCommand;
-      cmd.CommandText = @"SELECT * FROM City;";
+      cmd.CommandText = @"SELECT * FROM city;";
       MySqlDataReader rdr = cmd.ExecuteReader() as MySqlDataReader;
 
 
@@ -63,7 +63,7 @@ namespace AirlinePlanner
       MySqlConnection conn = DB.Connection();
       conn.Open();
       var cmd = conn.CreateCommand() as MySqlCommand;
-      cmd.CommandText = @"INSERT INTO City (name) VALUES(@CityName);";
+      cmd.CommandText = @"INSERT INTO city (name) VALUES(@CityName);";
       MySqlParameter name = new MySqlParameter();
       name.ParameterName = "@CityName";
       name.Value = this._name;

@@ -21,7 +21,7 @@ namespace AirlinePlanner.Controllers
   [HttpPost("/cities/new")]
   public ActionResult Create(string cityName)
   {
-    City city = new City( cityName, 0);
+    City city = new City(cityName, 0);
     city.Save();
     List <City> allCities = City.GetAll();
     return View ("Index", allCities);

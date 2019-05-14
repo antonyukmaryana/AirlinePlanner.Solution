@@ -26,5 +26,5 @@ namespace AirlinePlanner.Controllers
     List<Flight> allFlights = Flight.GetAll(cityId);
     return View("Index", allFlights);
   }
-}
+  }
 }

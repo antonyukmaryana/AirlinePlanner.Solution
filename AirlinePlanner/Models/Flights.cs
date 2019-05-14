@@ -28,9 +28,9 @@ namespace AirlinePlanner.Models
     {
       return _name;
     }
-    public void SetName(string Name)
+    public void SetName(string newName)
     {
-      _name = name;
+      _name = newName;
     }
     public static  List <Flight> GetAll(int cityId)
     {
@@ -41,8 +41,8 @@ namespace AirlinePlanner.Models
       cmd.CommandText = @"SELECT * FROM Flight where city_id = @cityId;";
       MySqlParameter cityParam = new MySqlParameter();
       cityParam.ParameterName = "@cityId";
-      cityIdParam.Value = cityId;
-      cmd.Parameters.Add(cityIdParam);
+      cityParam.Value = cityId;
+      cmd.Parameters.Add(cityParam);
       MySqlDataReader rdr = cmd.ExecuteReader() as MySqlDataReader;
 
       while(rdr.Read())
@@ -63,14 +63,14 @@ namespace AirlinePlanner.Models
       conn.Open();
       var cmd = conn.CreateCommand() as MySqlCommand;
       cmd.CommandText = @"INSERT INTO flight(name, city_id) VALUES(@name, @cityId);";
-      MySqlParameter infoParam = new MySqlParameter();
+      MySqlParameter nameParam = new MySqlParameter();
       nameParam.ParameterName = "@name";
       nameParam.Value = this._name;
-      cmd.Parameters.Add(infoParam);
+      cmd.Parameters.Add(nameParam);
       MySqlParameter cityIdParam = new MySqlParameter();
       cityIdParam.ParameterName = "@cityId";
       cityIdParam.Value = this._cityId;
-      cmd.Parameters.add(cityIdParam);
+      cmd.Parameters.Add(cityIdParam);
 
       cmd.ExecuteNonQuery();
       _id = (int) cmd.LastInsertedId;

@@ -5,10 +5,10 @@
 {
 <h3>No flights</h3>
 }
-@foreach(var client in Model)
+@foreach(var flight in Model)
 {
 <ul>
- <li>@flight.GetInfo()</li>
+ <li>@flight.GetName()</li>
  </ul>
 }
 <p><a href='flights/new?cityId=@Context.Request.Query["cityId"]'>add flight</a></p>

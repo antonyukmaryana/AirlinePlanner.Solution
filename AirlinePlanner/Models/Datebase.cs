@@ -2,7 +2,7 @@ using System;
 using MySql.Data.MySqlClient;
 using AirlinePlanner;
 
-namespace AirlinePlanner
+namespace AirlinePlanner.Models
 {
   public class DB
   {
