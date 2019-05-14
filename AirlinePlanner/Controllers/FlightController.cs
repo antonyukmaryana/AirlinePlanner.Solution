@@ -8,9 +8,9 @@ namespace AirlinePlanner.Controllers
   public class Flights : Controller
 {
   [HttpGet("/flights")]
-  public ActionResult Index (int cityId)
+  public ActionResult Index()
   {
-    List<Flight> allFlights = Flight.GetAll(cityId);
+    List<Flight> allFlights = Flight.GetAll();
     return View (allFlights);
   }
   [HttpGet("/flights/new")]
@@ -19,11 +19,11 @@ namespace AirlinePlanner.Controllers
     return View();
   }
   [HttpPost("/flights/new")]
-  public ActionResult Create (string name, int cityId)
+  public ActionResult Create (string departureCity, string arrivalCity, string status, int arrivalTime)
   {
-    Flight flight = new Flight(name, cityId, 0);
+    Flight flight = new Flight(departureCity, arrivalCity, status, arrivalTime, 0);
     flight.Save();
-    List<Flight> allFlights = Flight.GetAll(cityId);
+    List<Flight> allFlights = Flight.GetAll();
     return View("Index", allFlights);
   }
   }

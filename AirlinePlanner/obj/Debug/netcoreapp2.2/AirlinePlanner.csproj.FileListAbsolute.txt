@@ -13,8 +13,6 @@
 /Users/Guest/Desktop/Airline_Planner/AirlinePlanner/obj/Debug/netcoreapp2.2/AirlinePlanner.TagHelpers.input.cache
 /Users/Guest/Desktop/Airline_Planner/AirlinePlanner/obj/Debug/netcoreapp2.2/AirlinePlanner.TagHelpers.output.cache
 /Users/Guest/Desktop/Airline_Planner/AirlinePlanner/obj/Debug/netcoreapp2.2/AirlinePlanner.RazorCoreGenerate.cache
-/Users/Guest/Desktop/Airline_Planner/AirlinePlanner/obj/Debug/netcoreapp2.2/Razor/Views/Flight/Index.g.cshtml.cs
-/Users/Guest/Desktop/Airline_Planner/AirlinePlanner/obj/Debug/netcoreapp2.2/Razor/Views/Flight/New.g.cshtml.cs
 /Users/Guest/Desktop/Airline_Planner/AirlinePlanner/obj/Debug/netcoreapp2.2/Razor/Views/Home/Index.g.cshtml.cs
 /Users/Guest/Desktop/Airline_Planner/AirlinePlanner/obj/Debug/netcoreapp2.2/AirlinePlanner.RazorTargetAssemblyInfo.cache
 /Users/Guest/Desktop/Airline_Planner/AirlinePlanner/obj/Debug/netcoreapp2.2/AirlinePlanner.RazorTargetAssemblyInfo.cs
@@ -31,3 +29,5 @@
 /Users/Guest/Desktop/Airline_Planner/AirlinePlanner/obj/Debug/netcoreapp2.2/AirlinePlanner.csproj.CopyComplete
 /Users/Guest/Desktop/Airline_Planner/AirlinePlanner/obj/Debug/netcoreapp2.2/Razor/Views/Cities/Index.g.cshtml.cs
 /Users/Guest/Desktop/Airline_Planner/AirlinePlanner/obj/Debug/netcoreapp2.2/Razor/Views/Cities/New.g.cshtml.cs
+/Users/Guest/Desktop/Airline_Planner/AirlinePlanner/obj/Debug/netcoreapp2.2/Razor/Views/Flights/Index.g.cshtml.cs
+/Users/Guest/Desktop/Airline_Planner/AirlinePlanner/obj/Debug/netcoreapp2.2/Razor/Views/Flights/New.g.cshtml.cs

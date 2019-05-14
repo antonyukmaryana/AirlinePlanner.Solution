@@ -5,11 +5,17 @@
 {
 <h3>No flights</h3>
 }
+<ul>
 @foreach(var flight in Model)
 {
-<ul>
- <li>@flight.GetName()</li>
- </ul>
+ <li>Departure City: @flight.GetDepartureCity()</li>
+ <li>Arrival City: @flight.GetArrivalCity()</li>
+ <li>Status: @flight.GetStatus()</li>
+ <li>Arrival Time: @flight.GetArrivalTime()</li>
+ <br>
+ <p> ------------------------------- </p>
+ <br>
 }
+</ul>
 <p><a href='flights/new?cityId=@Context.Request.Query["cityId"]'>add flight</a></p>
 <p><a href='/'>Return to Main Page</a></p>

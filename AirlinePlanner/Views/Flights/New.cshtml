@@ -1,9 +1,21 @@
 @using AirlinePlanner.Models;
 <h1> We are happy to welcome you at our Airline Planner</h1>
 <h2>Please enter your flight information</h2>
+
 <form action='/flights/new?cityId=@Context.Request.Query["cityId"]' method='post'>
-<label for = 'name'>Enter flight info:</label>
-<input id='name' name='name' type='text'>
-<button type='submit'>Add flight</button>
+
+    <label for='arrivalCity'>Enter departure city:</label>
+    <input id='arrivalCity' name='arrivalCity' type='text'>
+
+    <label for='departureCity'>Enter departure city:</label>
+    <input id='departureCity' name='departureCity' type='text'>
+
+    <label for='status'>Enter flight status:</label>
+    <input id='status' name='status' type='text'>
+
+    <label for='arrivalTime'>Enter arrival time:</label>
+    <input id='arrivalTime' name='arrivalTime' type='number'>
+
+    <button type='submit'>Add flight</button>
 </form>
 <p><a href='/'> Return to Main Page</a></p>
