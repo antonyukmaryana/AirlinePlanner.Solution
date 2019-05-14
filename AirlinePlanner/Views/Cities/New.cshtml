@@ -1,11 +1,14 @@
 @using AirlinePlanner.Models;
+@{
+  Layout = "_Layout";
+}
 
 <h1>We are happy to welcome you at our Airline Planner</h1>
 <h2>Please enter the information</h2>
 <form action='/cities/new' method='post'>
 
 <label for ='arrivalCity'> Enter your destination:</label>
-<input id ='aarrivalCity' name='arrivalCity' type='text'>
+<input id ='arrivalCity' name='arrivalCity' type='text'>
 <button type='submit'> Add destination</button>
 </form>
 <p><a href='/'>Return to Main Page</a></p>

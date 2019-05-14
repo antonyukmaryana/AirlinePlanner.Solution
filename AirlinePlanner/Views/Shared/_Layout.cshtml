@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Airline Planner</title>
+    <link rel='stylesheet' href='https:maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="~/css/styles.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header jumbotron">
+        <h1>Airline Planner</h1>
+        
+      </div>
+      <div class="nav">
+        <a href="/">Home</a><br>
+        <a href="/cities">All Cities</a><br>
+        <a href="/flights">All Flights</a><br>
+
+      </div>
+      <div class="main">
+        @RenderBody()
+      </div>
+    </div>
+  </body>
+</html>

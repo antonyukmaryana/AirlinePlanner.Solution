@@ -31,3 +31,4 @@
 /Users/Guest/Desktop/Airline_Planner/AirlinePlanner/obj/Debug/netcoreapp2.2/Razor/Views/Cities/New.g.cshtml.cs
 /Users/Guest/Desktop/Airline_Planner/AirlinePlanner/obj/Debug/netcoreapp2.2/Razor/Views/Flights/Index.g.cshtml.cs
 /Users/Guest/Desktop/Airline_Planner/AirlinePlanner/obj/Debug/netcoreapp2.2/Razor/Views/Flights/New.g.cshtml.cs
+/Users/Guest/Desktop/Airline_Planner/AirlinePlanner/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_Layout.g.cshtml.cs
